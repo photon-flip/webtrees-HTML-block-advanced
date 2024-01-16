@@ -1,0 +1,61 @@
+.accord__item {
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+}
+
+.accord__item__title {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    /*background: #eee;*/
+    color: #333;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    position: relative;
+}
+
+.accord__item__title:after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: -1rem;
+    font-weight: bold;
+}
+
+a.closer.accord__item__title {
+    padding: 0px;
+    padding-right: 70px;
+    text-align: right;
+}
+
+.closer .accord__item__title:after {
+    content: " \02C7";   
+    position: absolute;
+    right: 20px;
+    top: 90%;
+    font-size: 2rem;
+    line-height: 2rem;    
+}
+
+.accord__item:nth-of-type(2n) .accord__item__title {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.accord__item__content {
+    display: none;
+    padding: 20px;
+}
+
+.accord__item__content:target {
+    display: block;
+    scroll-margin-block: 400px 0px;    
+}
+.accord__item.closer .accord__item__content:target {
+    padding: 0px;
+    line-height: 0rem;
+}
+
