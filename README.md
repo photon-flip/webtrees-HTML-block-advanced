@@ -39,8 +39,11 @@ View the result in the HTML Accordion Block you have added to your **My Page** o
 
 * You can use the WYSIWYG editor to add or remove content.
 * If you are comfortable with html code, use the [source] tab to edit and extend content.
-* To add new sections, use this example code.<br><span style="color:#c05050;font-size:1.2em"> **Important!** <br>**It is essential that the anchor href \# and div id use the same UNIQUE identifier.**
+* To add new sections, use this example code.
 
+ <span style="color:#c05050;font-size:1.2em"> **Important!** <br>**It is essential that the anchor href \# and div id use the same UNIQUE identifier - unique from all other sections.<br> 
+ If more than one complete HTML Block Compact is added to a page then all anchor href # and div ids will need to be changed so as to be different to the other block.** </span> 
+ 
 ```
  <div class="accord__item">
                 <a class="accord__item__title" href="#item5">Add New Sections</a>
