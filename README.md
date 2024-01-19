@@ -45,7 +45,7 @@ View the result in the HTML Accordion Block you have added to your **My Page** o
  If more than one complete HTML Block Compact is added to a page then all anchor href # and div ids will need to be changed so as to be different to the other block.** </span> 
  
 ```
- <div class="accord__item">
+<div class="accord__item">
     <a class="accord__item__title" href="#item10">Add New Sections</a>
     <div class="accord__item__content" id="item10">
         <h2>New Section Title</h2>
