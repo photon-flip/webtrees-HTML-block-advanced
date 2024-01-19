@@ -13,281 +13,274 @@ use Fisharebest\Webtrees\Tree;
 ?>
 
 <div class="accord gedcom_stats">
-    <h2>Main Title</h2>
+<h2>Main Title</h2>
 
-    <div class="accord-container">
-        <p><strong>An HTML block with multiple collapsing sections, ready to add your own content, edit and extend.</strong></p>
+<div class="accord-container">
+<p><strong>An HTML block with multiple collapsing sections, ready to add your own content, edit and extend.</strong></p>
 
-        <div class="accord">
-            <div class="accord__item closer"><a class="closer accord__item__title" href="#item0">compact</a>
+<div class="accord">
+<div class="accord__item closer"><a class="closer accord__item__title" href="#item0">compact</a>
 
-                <div class="accord__item__content" id="item0">&nbsp;</div>
-            </div>
-
-            <div class="accord__item"><a class="accord__item__title" href="#item1">Section 1</a>
-
-                <div class="accord__item__content" id="item1">
-                    <h2>ReadMe</h2>
-
-                    <h3>HTML Block Compact</h3>
-
-                    <p>A compact HTML Block using collapsible sections. This module is based on the default webtrees HTML Block. It has just one template that is structured in multiple collapsible sections. As a starter, each section is populated with the html of the default webtrees templates.</p>
-
-                    <p>Compatibility: Webtrees 2.1.18</p>
-
-                    <h3>Rationale</h3>
-
-                    <p>This module was designed to better display content such as an extensive family history narrative that would otherwise produce one very long page.</p>
-
-                    <h3>Installation</h3>
-
-                    <p>Install and enable the module:</p>
-
-                    <ul>
-                        <li>Download and unzip the release package.</li>
-                        <li>Place the html-block-compact folder inside modules_v4 folder of your webtrees installation.</li>
-                        <li>Open the control panel, Modules | Home page | Blocks, makesure "enabled" is checked next to the html-block-compact module, click "Save".</li>
-                    </ul>
-
-                    <p>Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)</p>
-
-                    <h3>Upgrading</h3>
-
-                    <p>To upgrade an existing installation of the module, simply replace the html-block-compact folder inside the modules_v4 folder with the new one.</p>
-
-                    <h3>Loading starter content</h3>
-
-                    <p>Choose Accordion Sections from the Template dropdown. To get you started, this will load the content of default webtrees HTML Block templates. These starter templates are inside collapsable accordion sections. The first section contains a ReadMe with more information. Add a Title and Save.<br />
-                        <br />
-                        View the result in the HTML Accordion Block you have added to your <strong>My Page</strong>&nbsp;or Tree <strong>Home Page</strong>&nbsp;from <strong>My pages</strong>&nbsp;menu - <strong>Customise this page</strong>.
-                    </p>
-
-                    <h3>Editing content and adding sections</h3>
-
-                    <ul>
-                        <li>You can use the WYSIWYG editor to add or remove content.</li>
-                        <li>If you are comfortable with html code, use the [source] tab to edit and extend content.</li>
-                        <li>To add new sections, use this example code.</li>
-                    </ul>
-
-                    <p><span style="font-size:18px"><span style="color:#c0392b"><strong>Important!<br />
-                                    It is essential that the anchor href # and div id use the same UNIQUE identifier. And unique from all other sections<br>
-
-                                    If more than one complete HTML Block Compact is added to a page, all anchor href # and div ids will need to be changed to be different to the other blocks.</strong></span>
-                        </span>
-                    </p>
-
-                    <blockquote>
-                        <p><span style="background-color:#ffffff">&lt;div class="accord__item"&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="accord__item__title" href="#item6"&gt;Add New Sections&lt;/a&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="accord__item__content" id="item6"&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;New Section Title&lt;/h2&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;hr&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Content here&lt;/p&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
-
-                        <p><span style="background-color:#ffffff">/*add new sections before the tree closing divs*/</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&lt;/div&gt;</span></p>
-                    </blockquote>
-
-                    <h2>Backup</h2>
-
-                    <p>It is good practice to make a backup copy of your edited content. It is possible to overwrite your custom content by again selecting the Accordion Sections template from the dropdown. As long as you don't&nbsp; <strong>Save</strong>, selecting <strong>Cancel </strong>at this point will leave your content in place. The WYSIWYG editor also is rather unforgiving of custom code errors so while editing, regular backups are always a good idea.</p>
-
-                    <p>To backup your content, select the [Source] tab in the editor and copy the source HTML code. This can be kept as a plain text file and pasted back into the editor source to restore. &nbsp;</p>
-                </div>
-            </div>
-
-            <div class="accord__item"><a class="accord__item__title" href="#item2">Section 2</a>
-
-                <div class="accord__item__content" id="item2">
-                    <h2>Statistics</h2>
-
-                    <hr />
-                    <div class="gedcom_stats">
-                        <p>Basic statistics for the <a href="http://localhost/webtrees2/tree/pre-changes">#gedcomTitle#</a> Family Tree</p>
-                        This family tree was last updated on #gedcomUpdated#.
-
-                        <div class="row">
-                            <div class="col col-sm-4">
-                                <table class="table wt-facts-table">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Individuals</th>
-                                            <td>#totalIndividuals#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Males</th>
-                                            <td>#totalSexMales#<br />
-                                                #totalSexMalesPercentage#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Females</th>
-                                            <td>#totalSexFemales#<br />
-                                                #totalSexFemalesPercentage#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Total surnames</th>
-                                            <td>#totalSurnames#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Families</th>
-                                            <td>#totalFamilies#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Sources</th>
-                                            <td>#totalSources#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Media objects</th>
-                                            <td>#totalMedia#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Repositories</th>
-                                            <td>#totalRepositories#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Events</th>
-                                            <td>#totalEvents#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Users</th>
-                                            <td>#totalUsers#</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="col col-sm-8">
-                                <table class="table wt-facts-table">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Earliest birth</th>
-                                            <td>#firstBirth#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Latest birth</th>
-                                            <td>#lastBirth#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Earliest death</th>
-                                            <td>#firstDeath#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Latest death</th>
-                                            <td>#lastDeath#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Individual who lived the longest</th>
-                                            <td>#longestLife#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Average age at death</th>
-                                            <td>#averageLifespan#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Family with the most children</th>
-                                            <td>#largestFamilySize#<br />
-                                                #largestFamily#</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Average number of children per family</th>
-                                            <td>#averageChildren#</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <p><strong>Most common surnames</strong></p>
-
-                        <p>#commonSurnames#</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accord__item"><a class="accord__item__title" href="#item3">Section 3</a>
-
-                <div class="accord__item__content" id="item3">
-                    <h2>Narrative Description</h2>
-
-                    <hr />
-                    <p>This family tree was last updated on #gedcomUpdated#. There are #totalSurnames# surnames in this family tree. The earliest recorded event is the #firstEventType# of #firstEventName# in #firstEventYear#. The earliest birth was&nbsp;#firstBirthName# in #firstBirthYear#.<br />
-                        <br />
-                        If you have any comments or feedback please contact #contactWebmaster#.
-                    </p>
-                </div>
-            </div>
-
-            <div class="accord__item"><a class="accord__item__title" href="#item4">Section 4</a>
-
-                <div class="accord__item__content" id="item4">
-                    <h2>Keyword Shortcuts</h2>
-
-                    <hr />
-                    <p>#getAllTagsTable#</p>
-                </div>
-            </div>
-
-            <div class="accord__item"><a class="accord__item__title" href="#item5">To Add New Sections</a>
-
-                <div class="accord__item__content" id="item5">
-                    <h2>New Section</h2>
-
-                    <hr />
-                    <p>To add new sections, use this example code.</p>
-
-                    <p><span style="font-size:18px"><span style="color:#c0392b"><strong>Important!<br />
-                                    It is essential that the anchor href # and div id use the same UNIQUE identifier. And unique from all other sections<br>
-                                    If more than one complete HTML Block Compact is added to a page, all anchor href # and div ids will need to be changed to be different to the other blocks.</strong></span>
-                        </span>
-                    </p>
-
-                    <blockquote>
-                        <p><span style="background-color:#ffffff">&lt;div class="accord__item"&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="accord__item__title" href="#item6"&gt;Add New Sections&lt;/a&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="accord__item__content" id="item6"&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;New Section Title&lt;/h2&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;hr&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Content here&lt;/p&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
-
-                        <p><span style="background-color:#ffffff">/*add new sections before the three closing divs*/</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&nbsp; &nbsp; &lt;/div&gt;</span></p>
-
-                        <p><span style="background-color:#ffffff">&lt;/div&gt;</span></p>
-                    </blockquote>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="accord__item__content" id="item0">&nbsp;</div>
 </div>
+
+<div class="accord__item"><a class="accord__item__title" href="#item1">Section 1</a>
+
+<div class="accord__item__content" id="item1">
+<h2>ReadMe</h2>
+
+<h3>HTML Block Compact</h3>
+
+<p>A compact HTML Block using collapsible sections. This module is based on the default webtrees HTML Block. It has just one template that is structured in multiple collapsible sections. As a starter, each section is populated with the html of the default webtrees templates.</p>
+
+<p>Compatibility: Webtrees 2.1.18</p>
+
+<h3>Rationale</h3>
+
+<p>This module was designed to better display content such as an extensive family history narrative that would otherwise produce one very long page.</p>
+
+<h3>Installation</h3>
+
+<p>Install and enable the module:</p>
+
+<ul>
+	<li>Download and unzip the release package.</li>
+	<li>Place the html-block-compact folder inside modules_v4 folder of your webtrees installation.</li>
+	<li>Open the control panel, Modules | Home page | Blocks, makesure "enabled" is checked next to the html-block-compact module, click "Save".</li>
+</ul>
+
+<p>Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)</p>
+
+<h3>Upgrading</h3>
+
+<p>To upgrade an existing installation of the module, simply replace the html-block-compact folder inside the modules_v4 folder with the new one.</p>
+
+<h3>Loading starter content</h3>
+
+<p>Choose Accordion Sections from the Template dropdown. To get you started, this will load the content of default webtrees HTML Block templates. These starter templates are inside collapsable accordion sections. The first section contains a ReadMe with more information. Add a Title and Save.<br />
+<br />
+View the result in the HTML Accordion Block you have added to your <strong>My Page</strong>&nbsp;or Tree <strong>Home Page</strong>&nbsp;from <strong>My pages</strong>&nbsp;menu - <strong>Customise this page</strong>.</p>
+
+<h3>Editing content and adding sections</h3>
+
+<ul>
+	<li>You can use the WYSIWYG editor to add or remove content.</li>
+	<li>If you are comfortable with html code, use the [source] tab to edit and extend content.</li>
+	<li>To add new sections, use this example code.</li>
+</ul>
+
+<p><span style="font-size:18px"><span style="color:#c0392b"><strong>Important!<br />
+It is essential that the anchor href # and div id use the same UNIQUE identifier. And unique from all other sections<br />
+If more than one complete HTML Block Compact is added to a page, all anchor href # and div ids will need to be changed to be different to the other blocks.</strong></span> </span></p>
+
+<blockquote>
+<p><span style="background-color:#ffffff">&lt;div class="accord__item"&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="accord__item__title" href="#item6"&gt;Add New Sections&lt;/a&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="accord__item__content" id="item6"&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;New Section Title&lt;/h2&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;hr&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Content here&lt;/p&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp;&lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+
+<p><span style="background-color:#ffffff">/*add new sections before the tree closing divs*/</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&lt;/div&gt;</span></p>
+</blockquote>
+
+<h2>Backup</h2>
+
+<p>It is good practice to make a backup copy of your edited content. It is possible to overwrite your custom content by again selecting the Accordion Sections template from the dropdown. As long as you don't&nbsp; <strong>Save</strong>, selecting <strong>Cancel </strong>at this point will leave your content in place. The WYSIWYG editor also is rather unforgiving of custom code errors so while editing, regular backups are always a good idea.</p>
+
+<p>To backup your content, select the [Source] tab in the editor and copy the source HTML code. This can be kept as a plain text file and pasted back into the editor source to restore. &nbsp;</p>
+</div>
+</div>
+
+<div class="accord__item"><a class="accord__item__title" href="#item2">Section 2</a>
+
+<div class="accord__item__content" id="item2">
+<h2>Statistics</h2>
+
+<hr />
+<div class="gedcom_stats">
+<p>Basic statistics for the <a href="http://localhost/webtrees2/tree/pre-changes">#gedcomTitle#</a> Family Tree</p>
+This family tree was last updated on #gedcomUpdated#.
+
+<div class="row">
+<div class="col col-sm-4">
+<table class="table wt-facts-table">
+	<tbody>
+		<tr>
+			<th scope="row">Individuals</th>
+			<td>#totalIndividuals#</td>
+		</tr>
+		<tr>
+			<th scope="row">Males</th>
+			<td>#totalSexMales#<br />
+			#totalSexMalesPercentage#</td>
+		</tr>
+		<tr>
+			<th scope="row">Females</th>
+			<td>#totalSexFemales#<br />
+			#totalSexFemalesPercentage#</td>
+		</tr>
+		<tr>
+			<th scope="row">Total surnames</th>
+			<td>#totalSurnames#</td>
+		</tr>
+		<tr>
+			<th scope="row">Families</th>
+			<td>#totalFamilies#</td>
+		</tr>
+		<tr>
+			<th scope="row">Sources</th>
+			<td>#totalSources#</td>
+		</tr>
+		<tr>
+			<th scope="row">Media objects</th>
+			<td>#totalMedia#</td>
+		</tr>
+		<tr>
+			<th scope="row">Repositories</th>
+			<td>#totalRepositories#</td>
+		</tr>
+		<tr>
+			<th scope="row">Events</th>
+			<td>#totalEvents#</td>
+		</tr>
+		<tr>
+			<th scope="row">Users</th>
+			<td>#totalUsers#</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="col col-sm-8">
+<table class="table wt-facts-table">
+	<tbody>
+		<tr>
+			<th scope="row">Earliest birth</th>
+			<td>#firstBirth#</td>
+		</tr>
+		<tr>
+			<th scope="row">Latest birth</th>
+			<td>#lastBirth#</td>
+		</tr>
+		<tr>
+			<th scope="row">Earliest death</th>
+			<td>#firstDeath#</td>
+		</tr>
+		<tr>
+			<th scope="row">Latest death</th>
+			<td>#lastDeath#</td>
+		</tr>
+		<tr>
+			<th scope="row">Individual who lived the longest</th>
+			<td>#longestLife#</td>
+		</tr>
+		<tr>
+			<th scope="row">Average age at death</th>
+			<td>#averageLifespan#</td>
+		</tr>
+		<tr>
+			<th scope="row">Family with the most children</th>
+			<td>#largestFamilySize#<br />
+			#largestFamily#</td>
+		</tr>
+		<tr>
+			<th scope="row">Average number of children per family</th>
+			<td>#averageChildren#</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<p><strong>Most common surnames</strong></p>
+
+<p>#commonSurnames#</p>
+</div>
+</div>
+</div>
+
+<div class="accord__item"><a class="accord__item__title" href="#item3">Section 3</a>
+
+<div class="accord__item__content" id="item3">
+<h2>Narrative Description</h2>
+
+<hr />
+<p>This family tree was last updated on #gedcomUpdated#. There are #totalSurnames# surnames in this family tree. The earliest recorded event is the #firstEventType# of #firstEventName# in #firstEventYear#. The earliest birth was&nbsp;#firstBirthName# in #firstBirthYear#.<br />
+<br />
+If you have any comments or feedback please contact #contactWebmaster#.</p>
+</div>
+</div>
+
+<div class="accord__item"><a class="accord__item__title" href="#item4">Section 4</a>
+
+<div class="accord__item__content" id="item4">
+<h2>Keyword Shortcuts</h2>
+
+<hr />
+<p>#getAllTagsTable#</p>
+</div>
+</div>
+
+<div class="accord__item"><a class="accord__item__title" href="#item5">To Add New Sections</a>
+
+<div class="accord__item__content" id="item5">
+<h2>New Section</h2>
+
+<hr />
+<p>To add new sections, use this example code.</p>
+
+<p><span style="font-size:18px"><span style="color:#c0392b"><strong>Important!<br />
+It is essential that the anchor href # and div id use the same UNIQUE identifier. And unique from all other sections<br />
+If more than one complete HTML Block Compact is added to a page, all anchor href # and div ids will need to be changed to be different to the other blocks.</strong></span> </span></p>
+
+<blockquote>
+<p><span style="background-color:#ffffff">&lt;div class="accord__item"&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="accord__item__title" href="#item6"&gt;Add New Sections&lt;/a&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="accord__item__content" id="item6"&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;New Section Title&lt;/h2&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;hr&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Content here&lt;/p&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp;&lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+
+<p><span style="background-color:#ffffff">/*add new sections before the tree closing divs*/</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&nbsp; &nbsp; &lt;/div&gt;</span></p>
+
+<p><span style="background-color:#ffffff">&lt;/div&gt;</span></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+
