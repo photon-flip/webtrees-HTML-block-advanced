@@ -33,6 +33,10 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
    
     use ModuleCustomTrait;
     use ModuleGlobalTrait;
+
+    public const CUSTOM_MODULE         = 'webtrees-HTML-block-compact';
+    public const CUSTOM_GITHUB_USER = 'photon-flip';
+    public const CUSTOM_WEBSITE          = 'https://github.com/' . self::CUSTOM_GITHUB_USER . '/' . self::CUSTOM_MODULE . '/';
        
     private HtmlService $html_service;
 
@@ -119,7 +123,15 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
         return 'MurrayJ';
     }
     
-
+   /**
+     * Where to get support for this module.  Perhaps a github respository?
+     *
+     * @return string
+     */
+    public function customModuleSupportUrl(): string
+    {
+        return self::CUSTOM_WEBSITE;
+    }
 
     
     /**
