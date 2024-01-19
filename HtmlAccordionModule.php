@@ -52,8 +52,6 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
       $this->html_service = $html_service;
     }  
     
-   
-    
     
     public function resourcesFolder(): string
     {
@@ -145,6 +143,7 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
     {
         return false;
     }
+   
 
     /**
      * Can this block be shown on the user’s home page?
@@ -170,6 +169,7 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
     {
         return '1.0.0';
     }
+   
     
     /**
      * Update the configuration for a block.
