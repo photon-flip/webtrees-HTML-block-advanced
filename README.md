@@ -53,14 +53,13 @@ View the result in the HTML Accordion Block you have added to your **My Page** o
         <p>Content here</p>
     </div>
 </div>
-```
-            
+```            
 add new sections before the three closing divs
-```
-         </div>
-     </div>
-  </div>
-```
+
+>               </div>
+>           </div>
+>       </div>
+
 ## Backup
 It is good practice to make a backup copy of your edited content. It is possible to overwrite your custom content by again selecting the Accordion Sections template from the dropdown. As long as you don't **Save**, selecting **Cancel** at this point will leave your content in place. The WYSIWYG editor also is rather unforgiving of custom code errors so while editing, regular backups are always a good idea.
 
