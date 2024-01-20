@@ -70,6 +70,7 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
     {
         View::registerNamespace($this->name(), $this->resourcesFolder() . 'views/');
         View::registerCustomView('::html/accordion', $this->name() . '::html/accordion');
+        View::registerCustomView('::html/accordion-vanilla', $this->name() . '::html/accordion-vanilla');
         View::registerCustomView('::html/config', $this->name() . '::html/config');       
          
     }
