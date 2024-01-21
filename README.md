@@ -5,7 +5,7 @@
 # HTML Block Compact
 
 
-A compact HTML Block using collapsible sections. This module is based on the default webtrees HTML Block. It has just one template that is structured in multiple collapsible sections. As a starter, each section is populated with the html of the default webtrees templates.
+A compact HTML Block using collapsible sections. This module is based on the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is populated with the html of the default webtrees templates and a ReadMe section.
 
 
 Compatibility: Webtrees 2.1.18
@@ -27,7 +27,8 @@ To upgrade an existing installation of the module, simply replace the html-block
 
 ## Loading starter content
 
-Choose Accordion Sections from the Template dropdown. To get you started, this will load the content of default webtrees HTML Block templates. These starter templates are inside collapsable accordion sections. The first section contains a ReadMe with more information. Add a Title and Save.
+Choose Accordion Starter from the Template dropdown. This will load the content of default webtrees HTML Block templates. These starter templates are inside collapsable accordion sections. The first section contains a ReadMe with more information. Add a **Title** and **Save**.<br>
+The **Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start. More templates to come.
 <img src="docs/screenshot2.jpg" width="70%" ><br/>
 View the result in the HTML Accordion Block you have added to your **My Page** or **Tree Home Page** from **My pages** menu - **Customise this page**.
 
