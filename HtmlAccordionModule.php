@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace CustomHtmlBlockNamespace;
 
+use Fisharebest\Localization\Translation;
 use Fisharebest\Webtrees\Module\HtmlBlockModule;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleBlockInterface;
@@ -213,7 +214,25 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
             'show_timestamp' => $show_timestamp,
             'templates'      => $templates,
             'title'          => $title,
-        ]);
+        ]);       
+    }
+
+        /** 
+     * Additional/updated translations. 
+     * 
+     * @param string $language 
+     * 
+     * @return string[] // array<string,string> 
+     */ 
+    public  function  customTranslations ( string  $language ) :  array 
+    { 
+        $languageDirectory  =  $this -> resourcesFolder ()  .  'lang/' ; 
+        $file               =  $languageDirectory  .  $language  .  '.mo' ; 
+        if  ( file_exists ( $file ))  { 
+            return  ( new  Translation ( $file )) -> asArray (); 
+        }  else  { 
+            return  []; 
+        } 
     }
   
 }
