@@ -28,7 +28,8 @@ To upgrade an existing installation of the module, simply replace the html-block
 ## Loading starter content
 
 Choose Accordion Starter from the Template dropdown. This will load the content of default webtrees HTML Block templates. These starter templates are inside collapsable accordion sections. The first section contains a ReadMe with more information. Add a **Title** and **Save**.<br>
-The **Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start. More templates to come.
+The **Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start. 
+More templates to come.
 <img src="docs/screenshot2.jpg" width="70%" ><br/>
 View the result in the HTML Accordion Block you have added to your **My Page** or **Tree Home Page** from **My pages** menu - **Customise this page**.
 
