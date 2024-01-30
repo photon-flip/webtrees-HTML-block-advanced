@@ -204,8 +204,8 @@ class HtmlAccordionModule extends HtmlBlockModule implements ModuleCustomInterfa
 
         $templates = [
             $html                                                       => I18N::translate('Choose a Template from the Dropdown'),            
-            view('html/accordion')                     => I18N::translate('Accordion Starter'),
-            view('html/accordion-vanilla')             => I18N::translate('Accordion Vanilla')
+            view('html/accordion', ['tree' => $tree])          => I18N::translate('Accordion Starter'),
+            view('html/accordion-vanilla')                     => I18N::translate('Accordion Vanilla')
         ];
 
         return view('html/config', [
