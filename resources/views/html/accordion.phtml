@@ -116,7 +116,7 @@ If more than one complete HTML Block Compact is added to a page, all anchor href
 
 <hr />
 <div class="gedcom_stats">
-<p>Basic statistics for the <a href="#">#gedcomTitle#</a> Family Tree</p>
+<p>Basic statistics for the <a href="<?= e(route(TreePage::class, ['tree' => $tree->name()])) ?>">#gedcomTitle# </a> Family Tree</p>
 This family tree was last updated on #gedcomUpdated#.
 
 <div class="row">
