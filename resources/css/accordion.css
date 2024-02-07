@@ -1,19 +1,19 @@
 .accord__item {
     margin-bottom: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.20);
     border-radius: 0.3rem;
 }
 
 .accord__item__title {
     display: block;
-    padding: 20px;
-    cursor: pointer;
-    /*background: #eee;*/
+    padding: 12px 70px;
+    cursor: pointer;   
     color: #333;
     background: rgba(0, 0, 0, 0.1);
     font-size: 1.2em;
     position: relative;
 }
+
 
 .accord__item__title:after {
     content: "+";
@@ -54,8 +54,18 @@ a.closer.accord__item__title {
     display: block;
     scroll-margin-block: 400px 0px;    
 }
+
 .accord__item.closer .accord__item__content:target {
     padding: 0px;
     line-height: 0rem;
 }
-
+.drop-cap::first-letter{
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 5em;
+  line-height: 70px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
