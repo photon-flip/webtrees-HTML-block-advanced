@@ -1,0 +1,109 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: webtrees-HTML-Block-Compact\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SearchPath-0: resources/views/html/config.phtml\n"
+"X-Poedit-SearchPath-1: HtmlAccordionModule.php\n"
+
+#: HtmlAccordionModule.php:101
+msgid "HTML Compact"
+msgstr "HTML Compact"
+
+#: HtmlAccordionModule.php:111
+msgid "A compact HTML Block with collapsable accordion sections"
+msgstr "Een compact HTML-blok met inklapbare accordeonsecties"
+
+#: HtmlAccordionModule.php:206
+msgid "Choose a Template from the Dropdown"
+msgstr "Kies een sjabloon uit de vervolgkeuzelijst"
+
+#: HtmlAccordionModule.php:207
+msgid "Accordion Starter"
+msgstr "Accordeon Starter"
+
+#: HtmlAccordionModule.php:208
+msgid "Accordion Vanilla"
+msgstr "Accordeon Vanilla"
+
+#: resources/views/html/config.phtml:20
+msgid "Title"
+msgstr "Titel"
+
+#: resources/views/html/config.phtml:29
+msgid "Templates"
+msgstr "Sjablonen"
+
+#: resources/views/html/config.phtml:34
+msgid ""
+"Choosing <b>Accordion Starter</b> from the <b>Template</b> dropdown will "
+"load the content of default webtrees HTML Block templates inside collapsable "
+"accordion sections. The first section contains a ReadMe with more "
+"information. Add a <b>Title</b> and <b>Save</b>. View the result in the "
+"<b>HTML Compact Block</b> you have added to your <b>My Page</b> or <b>Tree "
+"Home Page</b>.<br>\n"
+"            The <b>Vanilla</b> template is just the collapsible sections "
+"with Lorem ipsum placeholder text.<br>\n"
+"            More templates to come."
+msgstr ""
+"Door <b>Accordeon Starter</b> te kiezen uit de vervolgkeuzelijst "
+"<b>Sjabloon</b> wordt de inhoud van standaard webtrees-HTML-bloksjablonen "
+"geladen in inklapbare accordeonsecties. De eerste sectie bevat een ReadMe "
+"met meer informatie. Voeg een <b>Titel</b> toe en klik op <b>Opslaan</b>. "
+"Bekijk het resultaat in het <b>HTML Compact Block</b> dat u hebt toegevoegd "
+"aan uw <b>Mijn Pagina</b> of <b>Stamboom</b>.<br>\n"
+"            Het <b>Vanilla</b>-sjabloon is gewoon de inklapbare secties met "
+"Lorem ipsum-plaatshoudertekst.<br>\n"
+"            Meer sjablonen volgen."
+
+#: resources/views/html/config.phtml:43
+msgid "Content"
+msgstr "Inhoud"
+
+#: resources/views/html/config.phtml:47
+msgid ""
+"You can use the editor toolbar to apply HTML formatting to your content. "
+"Advanced users can use the <b>Source</b> tab to access HTML code for editing "
+"content. There you can apply webtrees CSS classes to your content for more "
+"integrated styling. You can also insert special database fields which are "
+"updated automatically. These fields are marked with <b>#</b> characters. For "
+"example <b>#totalFamilies#</b> will be replaced with the actual number of "
+"families in the database. Using the <b>Source</b> you can also add more "
+"sections. See the ReadMe in the first starter section for important "
+"information on that."
+msgstr ""
+"U kunt de werkbalk van de editor gebruiken om HTML-opmaak toe te passen op "
+"uw inhoud. Gevorderde gebruikers kunnen het tabblad <b>Bron</b> gebruiken om "
+"toegang te krijgen tot HTML-code voor het bewerken van inhoud. Daar kun u "
+"webtrees-CSS-klassen toepassen op uw inhoud voor een meer geïntegreerde "
+"opmaak. U kunt ook speciale databasevelden invoegen die automatisch worden "
+"bijgewerkt. Deze velden zijn gemarkeerd met <b>#</b>-tekens. Bijvoorbeeld "
+"<b>#totalFamilies#</b> wordt vervangen door het werkelijke aantal families "
+"in de database. Met de <b>Bron</b> kunt u ook meer secties toevoegen. Zie de "
+"ReadMe in de eerste starterssectie voor belangrijke informatie daarover."
+
+#: resources/views/html/config.phtml:55
+msgid "Show the date and time of update"
+msgstr "Toon de datum en tijd van bijwerken"
+
+#: resources/views/html/config.phtml:58
+msgid "no"
+msgstr "nee"
+
+#: resources/views/html/config.phtml:58
+msgid "yes"
+msgstr "ja"
+
+#: resources/views/html/config.phtml:64
+msgid "Show this block for which languages"
+msgstr "Toon dit blok voor welke talen"
