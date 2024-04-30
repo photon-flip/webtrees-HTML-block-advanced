@@ -8,7 +8,7 @@
 An HTML Block using collapsible sections and enabling advanced styles and features. This module an extension of the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is a sampler of features and styles suitable for a family history or biography. There is also a ReadMe section.
 
 
-Compatibility: webtrees 2.1.20
+Compatibility: webtrees 2.1.20 <br>
 Requires webtrees 2.1.20 for extended allowed classes and styles.   
 
 ## Rationale
