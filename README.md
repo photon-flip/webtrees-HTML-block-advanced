@@ -29,6 +29,7 @@ To upgrade an existing installation of the module, simply replace the html-block
 ## Loading starter content
 
 Choose **Compact Sampler** from the Template dropdown. This will load the content of a demonstration template that can be edited and altered to suit your needs. This sampler template has collapsable sections and placeholder images and text. Add a **Title** and **Save**.<br>
+***Caution!*** *this will overwrite any previously saved content.*\
 
 The **Compact Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start.<br> 
 More templates to come.
