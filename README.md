@@ -5,20 +5,20 @@
 # HTML Block Advanced
 
 
-An HTML Block using collapsible sections and enabling advanced styles and features. This module an extension of the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is a sampler of features and styles suitable for a family history or biography. There is also a ReadMe section.
+An HTML Block using collapsible sections and enabling advanced styles and features. This module an extension of the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is a sampler of features and styles suitable for a family history or biography.
 
 
 Compatibility: webtrees 2.1.20 <br>
 Requires webtrees 2.1.20 for extended allowed classes and styles.   
 
 ## Rationale
-This module was designed to better display content such as an extensive family history narrative that would otherwise produce one very long page.
+This module was designed to better display longform content such as an extensive family history narrative that would otherwise produce one very long page.
 
 ## Installation
 
 Install and enable the module:
 * Download and unzip the release package.
-* Place the html-block-advanced folder inside modules_v4 folder of your webtrees installation.
+* Place the *webtrees-HTML-block-advanced* folder inside *modules_v4* folder of your webtrees installation.
 * Open the control panel, Modules | Home page | Blocks, make sure "enabled" is checked next to the html-block-advanced module, click "Save"
 
 Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)
@@ -28,13 +28,13 @@ To upgrade an existing installation of the module, simply replace the html-block
 
 ## Loading starter content
 
-Choose Sampler from the Template dropdown. This will load the content of a demonstration template that can be edited and altered to suit your needs. This sampler template has collapsable sections. Add a **Title** and **Save**.<br>
+Choose **Compact Sampler** from the Template dropdown. This will load the content of a demonstration template that can be edited and altered to suit your needs. This sampler template has collapsable sections and placeholder images and text. Add a **Title** and **Save**.<br>
 
-The **Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start.<br> 
+The **Compact Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start.<br> 
 More templates to come.
 
 <img src="docs/screenshot2.jpg" width="70%" ><br/>
-View the result in the HTML Accordion Block you have added to your **My Page** or **Tree Home Page** from **My pages** menu - **Customise this page**.
+View the result in the HTML Advanced Block you have added to your **My Page** or **Tree Home Page** from **My pages** menu - **Customise this page**.
 
 ## Customizing Content
 
