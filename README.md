@@ -50,20 +50,17 @@ View the result in the HTML Advanced Block you have added to your **My Page** or
  If more than one complete HTML Block Advanced is added to a page then all anchor href # and div ids will need to be changed so as to be different to the other block.** </span> 
  
 ```
-<div class="accord__item">
-    <a class="accord__item__title" href="#item10">Add New Sections</a>
-    <div class="accord__item__content" id="item10">
-        <h2>New Section Title</h2>
-        <hr>
+<div class="compact__section"><a class="compact__section__title" href="#section-101">New Section</a>
+    <div class="compact__section__content" id="section-101">
+        <h3>New Section</h3>
         <p>Content here</p>
     </div>
 </div>
 ```            
-add new sections before the three closing divs
+add new sections before the closing divs of a previous section
 
 >               </div>
 >           </div>
->       </div>
 
 ## Backup
 It is good practice to make a backup copy of your edited content. It is easily possible to unintentionally overwrite your custom content by again selecting template from the dropdown. As long as you don't **Save**, selecting **Cancel** at this point will leave your content in place. The WYSIWYG editor also is rather unforgiving of custom code errors so while editing, regular backups are always a good idea.
