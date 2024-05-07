@@ -57,7 +57,7 @@ View the result in the HTML Advanced Block you have added to your **My Page** or
     </div>
 </div>
 ```            
-add new sections before the closing divs of a previous section
+add new sections after the closing divs of a previous section
 
 >               </div>
 >           </div>
