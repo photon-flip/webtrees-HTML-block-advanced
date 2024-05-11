@@ -5,26 +5,16 @@ declare(strict_types=1);
 use Fisharebest\Webtrees\Http\RequestHandlers\TreePage;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Tree;
-;
-
-
 
 /**
  * @var Tree $tree
  */
-
 ?>
 
-<div class="accord gedcom_stats">
-    <p>
-        <a href="<?= e(route(TreePage::class, ['tree' => $tree->name()])) ?>">#gedcomTitle# </a><br />
-                    
-    </p>
-    
 <h2>Main Title</h2>
-<div class="accord-container">
+<div>
 <p><strong>An HTML block with multiple collapsing sections, ready to add your own content, edit and extend.</strong></p>
-<div class="accord">
+<div>
     
 <div class="compact__section closer"><a class="closer compact__section__title" href="#item0">compact</a>
 <div class="compact__section__content" id="item0">&nbsp;</div>
@@ -74,15 +64,5 @@ use Fisharebest\Webtrees\Tree;
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit mauris quis risus molestie, in interdum risus faucibus. Donec eu rhoncus ligula. Sed quis blandit ex. Nullam facilisis consectetur erat sed ultrices. Pellentesque consectetur condimentum quam, sed auctor nulla pellentesque et. Suspendisse tempus pharetra purus, eget vulputate lorem efficitur nec. Praesent tincidunt, lectus ut fringilla sagittis, dolor ex tempus mi, nec dictum ante felis vel odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras in commodo libero. Vestibulum commodo massa quis enim facilisis mollis. Vivamus efficitur, lacus non consectetur eleifend, ex dui dignissim arcu.</p>
 </div>
 </div>
-
-
 </div>
 </div>
-</div>
-
-
-
-
-
-
-
