@@ -1,9 +1,11 @@
 <?php
 
 declare(strict_types=1);
-
+namespace HtmlBlockAdvanced;
+use Fisharebest\Webtrees\Http\RequestHandlers\TreePage;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\View;
+use Fisharebest\Webtrees\Tree;
 
 /**
  * @var string               $html
@@ -14,65 +16,108 @@ use Fisharebest\Webtrees\View;
  */
 
 ?>
+<div class="container p-2">
+    <div class="row">
+        <div class="col-md-6 offset-md-2">
+            <a class="btn btn-primary text-nowrap" data-bs-toggle="collapse" href="#collapseSection" role="button" aria-expanded="false" aria-controls="collapseExample">Getting Started - User Manual
+            </a>
+            <a class="btn btn-primary text-nowrap" role="link" href="https://github.com/photon-flip/webtrees-HTML-block-advanced#html-block-advanced" target="_blank">
+                More Templates - github
+            </a>
+        </div>
+        <div class="col-md-9 collapse offset-md-2" id="collapseSection">
+            <div class="card card-body">
+                <p>
+                    <?= I18N::translate('<b>HTML Advanced is based on the webtrees HTML Block but enables advanced styles and features.</b><br>webtrees 2.1.20 extended the css classes that can be used in the CKEditor.')?>
+                </p>
+                <p>
+                    <?= I18N::translate('<b>Getting Started</b><br>Choosing <b>Compact Sampler</b> from the <b>Template</b> dropdown will load a demonstration HTML Block template.<br><span style="color:#c85e00">Warning! - this will overwrite any previously entered or saved content in the editor. See the User Manual for how to back up you content.</span><br> This <b>Sampler</b> template is structured with collapsable sections suitable for longform content such as a <b>Family History</b> or <b>Biography</b>. See the <b>User Manual</b> link below for more detailed "How To" information.') ?>
+                </p>
+                <p>
+                    <?= I18N::translate('The <b>Vanilla</b> template loads just the basic collapsible sections with Lorem ipsum placeholder text.') ?>
+                </p>
+                <p>
+                    <?= I18N::translate('Next add a <b>Title</b> and <b>Save</b>. View the result in the <b>HTML Advanced</b> block you have added to your <b>My Page</b> or <b>Tree Home Page</b>.<br>            
+                    ') ?>
+                </p>
+                <p><?= I18N::translate('Editing and customizing content is best done using the <b>Source</b> tab to access the undelying HTML code. It is possible to use the editor toolbar to edit your content but the CKEditor 4 used in webtrees has "limitations" that make this less than ideal. Using the <b>Source</b> you can also add more sections - see the User Manual for important information on that.') ?>
+                </p>
+                
+                <p>
+                    <?= I18N::translate('<b>Images - Troubleshooting.</b><br>
+                    Configuring images to display correctly in content can be challenging.<br> 
+                    
+                    <ul style="margin: 0px; font-size:1rem;"><b>Missing images.</b><br>The most common reason for missing images is an incorrect src="" path of the &lt;img&gt; tag.<br>The Sampler template uses <b>relative</b> path urls to placeholder images located in the module "resources" directory. This is intended to be a temporary starter arrangement. The path to the images is set up for a Tree Page block. If the Block is on a User Page the path needs to be prepended with an extra ../<br> example src="../../modules_v4/.....</ul>
+                    <p>See the <b>User Manual</b> for more information on linking images and other webtrees content.</p> 
+                    ') ?>
+                </p>
+                <div class="col-md-6">
+                    <a class="btn btn-primary text-nowrap" role="link" href="https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki" target="_blank">
+                        User Manual - github
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
 
-<div class="row mb-3">
-    <label class="col-sm-3 col-form-label" for="title">
+<div class="row">
+    <label class="col-md-2 col-form-label" for="title">
         <?= I18N::translate('Title') ?>
     </label>
-    <div class="col-sm-9">
+    <div class="col-md-9">
         <input class="form-control" type="text" id="title" name="title" value="<?= e($title) ?>">
     </div>
 </div>
 
-<div class="row mb-3">
-    <label class="col-sm-3 col-form-label" for="template">
+<div class="row my-2">
+    <label class="col-md-2 col-form-label" for="template">
         <?= I18N::translate('Templates') ?>
     </label>
-    <div class="col-sm-9">
+
+    <div class="col-md-9">
         <?= view('components/select', ['name' => '', 'id' => 'template', 'selected' => '', 'options' => $templates]) ?>
-        <p>
-            <?= I18N::translate('Choosing <b>Accordion Starter</b> from the <b>Template</b> dropdown will load the content of default webtrees HTML Block templates inside collapsable accordion sections. The first section contains a ReadMe with more information. Add a <b>Title</b> and <b>Save</b>. View the result in the <b>HTML Compact Block</b> you have added to your <b>My Page</b> or <b>Tree Home Page</b>.<br>
-            The <b>Vanilla</b> template is just the collapsible sections with Lorem ipsum placeholder text.
-            More templates to come.') ?>
-        </p>
     </div>
 </div>
 
-<div class="row mb-3">
-    <label class="col-sm-3 col-form-label" for="html">
+<div class="row">
+    <label class="col-md-2 col-form-label" for="html">
         <?= I18N::translate('Content') ?>
     </label>
+
     <div class="col-sm-9">
-        <p>
-            <?= I18N::translate('You can use the editor toolbar to apply HTML formatting to your content. Advanced users can use the <b>Source</b> tab to access HTML code for editing content. There you can apply webtrees CSS classes to your content for more integrated styling. You can also insert special database fields which are updated automatically. These fields are marked with <b>#</b> characters. For example <b>#totalFamilies#</b> will be replaced with the actual number of families in the database. Using the <b>Source</b> you can also add more sections. See the ReadMe in the first starter section for important information on that.') ?>
-        </p>
         <textarea name="html" id="html" class="html-edit form-control" rows="10"><?= e($html) ?></textarea>
     </div>
 </div>
 
-<fieldset class="row mb-3">
-    <legend class="col-form-label col-sm-3">
-        <?= I18N::translate('Show the date and time of update') ?>
-    </legend>
-    <div class="col-sm-9">
-        <?= view('components/radios-inline', ['name' => 'show_timestamp', 'options' => [I18N::translate('no'), I18N::translate('yes')], 'selected' => (int) $show_timestamp]) ?>
-    </div>
-</fieldset>
+<div>
+    <fieldset class="row mt-2">
+        <legend class="col-form-label col-sm-2">
+            <?= I18N::translate('Show the date and time of update') ?>
+        </legend>
+        <div class="col-sm-9">
+            <?= view('components/radios-inline', ['name' => 'show_timestamp', 'options' => [I18N::translate('no'), I18N::translate('yes')], 'selected' => (int) $show_timestamp]) ?>
+        </div>
+    </fieldset>
 
-<fieldset class="row mb-3">
-    <legend class="col-form-label col-sm-3">
-        <?= I18N::translate('Show this block for which languages') ?>
-    </legend>
-    <div class="col-sm-9">
-        <?= view('edit/language-checkboxes', ['languages' => $languages]) ?>
-    </div>
-</fieldset>
+    <fieldset class="row mb-2">
+        <legend class="col-form-label col-sm-2">
+            <?= I18N::translate('Show this block for which languages') ?>
+        </legend>
+        <div class="col-sm-9">
+            <?= view('edit/language-checkboxes', ['languages' => $languages]) ?>
+        </div>
+    </fieldset>
+
+</div>
+
 
 <?php View::push('javascript') ?>
 <script>
-    $("#template").change(function () {
-        this.form.html.value=this.options[this.selectedIndex].value;
+    $("#template").change(function() {
+        this.form.html.value = this.options[this.selectedIndex].value;
         CKEDITOR.instances.html.setData(document.getElementById("html").value);
     });
+
 </script>
 <?php View::endpush() ?>
