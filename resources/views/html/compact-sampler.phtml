@@ -1,0 +1,215 @@
+<?php
+
+declare(strict_types=1);
+
+use Fisharebest\Webtrees\Http\RequestHandlers\TreePage;
+use Fisharebest\Webtrees\I18N;
+use Fisharebest\Webtrees\Tree;
+
+/**
+ * @var Tree $tree
+ */
+
+?>
+
+<div class="card card-body compact-header mb-4">
+    <h2>Biographic Narrative Sampler</h2>
+
+    <div><img alt="biographic people" class="w-100" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/line-crowd.jpg" /></div>
+
+    <div>
+        <p>An optional header image and introduction section.<br />
+            Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    </div>
+</div>
+
+<div class="compact-nav">
+    <ul class="pagination">
+        <li class="page-section"><a class="page-link" href="#section-1">Section 1</a></li>
+        <li class="page-section"><a class="page-link" href="#section-2">Section 2</a></li>
+        <li class="page-section"><a class="page-link" href="#section-3">Section 3</a></li>
+        <li class="page-section"><a class="page-link" href="#section-4">Section 4</a></li>
+        <li class="page-section"><a class="page-link" href="#section-5">Section 5</a></li>
+        <li class="page-section"><a class="page-link" href="#section-0">Close</a></li>
+    </ul>
+</div>
+
+<div class="closer compact__section"><a class="compact__section__title" href="#section-0">compact all</a>
+    <div class="compact__section__content" id="section-0">&nbsp;</div>
+</div>
+
+<div class="compact__section">
+    <a class="compact__section__title" href="#section-1">Section 1</a>
+    <div class="compact__section__content moving" id="section-1">
+        <h3>Title 1</h3>
+        <hr />
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card"><img alt="Card image cap" class="card-img-top" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/woman-profile-blue-line.svg" style="width:100%" />
+                    <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <p class="drop-cap">Using Bootstrap classes for image: card-img-top.</p>
+
+                <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+
+                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="compact__section"><a class="compact__section__title" href="#section-2">Section 2</a>
+
+    <div class="compact__section__content moving" id="section-2">
+        <h3>Title 2</h3>
+
+        <hr />
+        <ul class="list-unstyled">
+            <li><img alt="Generic placeholder image" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/tree.svg" style="width:100px" />
+                <div class="media-body">
+                    <h5>List-based media object</h5>
+                    Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li><img alt="Generic placeholder image" class="mr-3" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/tree.svg" style="width:100px" />
+                <div class="media-body">
+                    <h5>List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li><img alt="Generic placeholder image" class="mr-3" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/tree.svg" style="width:100px" />
+                <div class="media-body">
+                    <h5>List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="compact__section"><a class="compact__section__title" href="#section-3">Section 3</a>
+
+    <div class="compact__section__content moving" id="section-3">
+        <h3>Title 3</h3>
+
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h4>Column One</h4>
+
+                    <div class="card"><img alt="Card image cap" class="card-img-top" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/woman-profile-blue-line.svg" style="width:100%" />
+                        <div class="card-body">
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <h4>Column Two</h4>
+
+                    <div class="card"><img alt="Card image cap" class="card-img-top" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/man-profile-blue-line.svg" style="width:100%" />
+                        <div class="card-body">
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <h4>Column Three</h4>
+
+                    <div class="card"><img alt="Card image cap" class="card-img-top" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/woman-profile-blue-line.svg" style="width:100%" />
+                        <div class="card-body">
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="compact__section"><a class="compact__section__title" href="#section-4">Section 4</a>
+
+    <div class="compact__section__content" id="section-4">
+        <h3>Title 4</h3>
+
+        <div class="d-flex">
+            <div class="align-sections-center row">
+                <div class="col-sm-10">
+                    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+
+                <div class="col-sm-2"><img alt="Generic placeholder image" class="float-end img-thumbnail" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/tree.svg" style="width:100px" /></div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="d-flex">
+            <div class="align-sections-center row">
+                <div class="col-sm-10">
+                    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+
+                <div class="col-sm-2"><img alt="Generic placeholder image" class="float-end img-thumbnail" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/tree.svg" style="width:100px" /></div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="d-flex">
+            <div class="align-sections-center row">
+                <div class="col-sm-10">
+                    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+
+                <div class="col-sm-2"><img alt="Generic placeholder image" class="float-end img-thumbnail" src="../modules_v4/webtrees-HTML-block-advanced/resources/images/tree.svg" style="width:100px" /></div>
+            </div>
+        </div>
+
+        <hr />
+    </div>
+</div>
+
+<div class="compact__section"><a class="compact__section__title" href="#section-5">Section 5</a>
+
+    <div class="compact__section__content moving" id="section-5">
+        <h3>Title 5</h3>
+
+        <hr />
+        <div>
+            <p class="drop-cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit mauris quis risus molestie, in interdum risus faucibus. Donec eu rhoncus ligula. Sed quis blandit ex. Nullam facilisis consectetur erat sed ultrices. Pellentesque consectetur condimentum quam, sed auctor nulla pellentesque et. Suspendisse tempus pharetra purus, eget vulputate lorem efficitur nec. Praesent tincidunt, lectus ut fringilla sagittis, dolor ex tempus mi, nec dictum ante felis vel odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras in commodo libero. Vestibulum commodo massa quis enim facilisis mollis. Vivamus efficitur, lacus non consectetur eleifend, ex dui dignissim arcu.</p>
+            <ul>
+                <li>Lists styled and unstyled</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                    <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                        <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="comment">
+<div class="compact__section"><a class="compact__section__title" href="#section-601">New Section</a>
+    <div class="compact__section__content moving" id="section-111">
+        <h3>Title 1</h3>
+        <p>Content here</p>
+    </div>
+</div>
+</div>
+
+<div class="compact__section to-top"><a class="compact__section__title" href="#section-0">compact to top</a>
+    <div class="compact__section__content" id="bottom">&nbsp;</div>
+</div>
