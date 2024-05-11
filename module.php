@@ -1,14 +1,13 @@
 <?php
 
 /**
- * HtmlAccordionModule.
+ * HtmlAdvancedModule.
  */
 
 declare(strict_types=1);
 
-namespace CustomHtmlBlockNamespace;
+namespace HtmlBlockAdvanced;
 
-require __DIR__ . '/HtmlAccordionModule.php';
+require __DIR__ . '/HtmlAdvancedModule.php';
 
-
-return app(HtmlAccordionModule::class);
+return app(HtmlAdvancedModule::class);
