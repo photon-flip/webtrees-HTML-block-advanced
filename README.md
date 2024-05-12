@@ -38,11 +38,18 @@ More templates to come.
 <img src="docs/screenshot2.jpg" width="70%" ><br/>
 View the result in the HTML Advanced Block you have added to your **My Page** or **Tree Home Page** from **My pages** menu - **Customise this page**.
 
-## Customizing Content
-
 <img src="docs/screenshot1.jpg" width="50%" >
 
+## Customizing Content
+
+<img src="docs/screenshot3.jpg" width="50%" >
+
+### Work on a full User Manual is ongoing
+[User Manual wiki](https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki)
+
+
 ### Editing content and adding sections
+
 
 * You can use the WYSIWYG editor to add or remove content.
 * If you are comfortable with html code, use the [source] tab to edit and extend content.
