@@ -14,8 +14,8 @@ use Fisharebest\Webtrees\Tree;
  * @var array<string,string> $templates
  * @var string               $title
  */
-
 ?>
+
 <div class="container p-2">
     <div class="row">
         <div class="col-md-6 offset-md-2">
@@ -28,10 +28,10 @@ use Fisharebest\Webtrees\Tree;
         <div class="col-md-9 collapse offset-md-2" id="collapseSection">
             <div class="card card-body">
                 <p>
-                    <?= I18N::translate('<b>HTML Advanced is based on the webtrees HTML Block but enables advanced styles and features.</b><br>webtrees 2.1.20 extended the css classes that can be used in the CKEditor.')?>
+                    <?= I18N::translate('<b>HTML Advanced is based on the webtrees HTML Block. It makes use of extra allowed CSS classes that can now be used in the CKEditor since webtrees 2.1.20.<b>')?>
                 </p>
                 <p>
-                    <?= I18N::translate('<b>Getting Started</b><br>Choosing <b>Compact Sampler</b> from the <b>Template</b> dropdown will load a demonstration HTML Block template.<br><span style="color:#c85e00">Warning! - this will overwrite any previously entered or saved content in the editor. See the User Manual for how to back up you content.</span><br> This <b>Sampler</b> template is structured with collapsable sections suitable for longform content such as a <b>Family History</b> or <b>Biography</b>. See the <b>User Manual</b> link below for more detailed "How To" information.') ?>
+                    <?= I18N::translate('<b>Getting Started</b><br>Choosing <b>Compact Sampler</b> from the <b>Template</b> dropdown will load a demonstration HTML Block template.<br><span style="color:#c85e00">Warning! - this will overwrite any previously entered or saved content in the editor. See the User Manual for how to back up your content.</span><br> The <b>Sampler</b> template is structured with collapsable sections suitable for longform content such as a <b>Family History</b> or <b>Biography</b>. See the <b>User Manual</b> link below for more detailed "How To" information.') ?>
                 </p>
                 <p>
                     <?= I18N::translate('The <b>Vanilla</b> template loads just the basic collapsible sections with Lorem ipsum placeholder text.') ?>
@@ -40,14 +40,16 @@ use Fisharebest\Webtrees\Tree;
                     <?= I18N::translate('Next add a <b>Title</b> and <b>Save</b>. View the result in the <b>HTML Advanced</b> block you have added to your <b>My Page</b> or <b>Tree Home Page</b>.<br>            
                     ') ?>
                 </p>
-                <p><?= I18N::translate('Editing and customizing content is best done using the <b>Source</b> tab to access the undelying HTML code. It is possible to use the editor toolbar to edit your content but the CKEditor 4 used in webtrees has "limitations" that make this less than ideal. Using the <b>Source</b> you can also add more sections - see the User Manual for important information on that.') ?>
+                <p><?= I18N::translate('Editing and customizing content is best done using the <b>Source</b> tab to access the underlying HTML code. It is possible to use the editor toolbar to edit your content but the CKEditor 4 used in webtrees has "limitations" that make this less than ideal. Using the <b>Source</b> you can also add more sections - see the <b>User Manual</b> for important information on that.') ?>
                 </p>
                 
                 <p>
                     <?= I18N::translate('<b>Images - Troubleshooting.</b><br>
                     Configuring images to display correctly in content can be challenging.<br> 
                     
-                    <ul style="margin: 0px; font-size:1rem;"><b>Missing images.</b><br>The most common reason for missing images is an incorrect src="" path of the &lt;img&gt; tag.<br>The Sampler template uses <b>relative</b> path urls to placeholder images located in the module "resources" directory. This is intended to be a temporary starter arrangement. The path to the images is set up for a Tree Page block. If the Block is on a User Page the path needs to be prepended with an extra ../<br> example src="../../modules_v4/.....</ul>
+                    <p style="margin-left:20px">
+                    <b>Missing images.</b><br>
+                    The most common reason for missing images is an incorrect src="" path of the &lt;img&gt; tag.<br>The Sampler template uses <b>relative</b> path urls to placeholder images located in the module "resources" directory. This is intended to be a temporary starter arrangement. The path to the images is set up for a Tree Page block. If the Block is on a User Page the path needs to be prepended with an extra ../<br> example src="../../modules_v4/.....</p>
                     <p>See the <b>User Manual</b> for more information on linking images and other webtrees content.</p> 
                     ') ?>
                 </p>
