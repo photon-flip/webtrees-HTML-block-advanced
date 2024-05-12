@@ -33,7 +33,8 @@ Choose **Compact Sampler** from the Template dropdown. This will load the conten
 ***Caution!*** *this will overwrite any previously saved content.* See [Backup Section](#backup) below
 
 The **Compact Vanilla** template contains only the collapsible sections with Lorem ipsum placeholder text for a clean start.<br> 
-More templates to come.
+
+[More templates to come.](https://github.com/photon-flip/Templates-webtrees-HTML-Advanced)
 
 <img src="docs/screenshot2.jpg" width="70%" ><br/>
 View the result in the HTML Advanced Block you have added to your **My Page** or **Tree Home Page** from **My pages** menu - **Customise this page**.
