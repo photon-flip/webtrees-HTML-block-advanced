@@ -37,7 +37,7 @@
 
 .compact__section__content:target {
     display: block;
-    scroll-margin-block: 55vh 0px; 
+    scroll-margin-block: 20vh 0px; 
     background: rgba(255, 255, 255, 0.2);
 }
 
@@ -69,7 +69,8 @@
 
 .closer .compact__section__content:target {
     padding: 0px;
-    line-height: 0rem;    
+    line-height: 0rem;
+    scroll-margin-block: 55vh 0px; 
 } /*target "empty" top section to close */
 
 .wt-route-UserPageBlockEdit .card, .card-body {
