@@ -5,20 +5,20 @@
 # HTML Block Advanced
 
 
-An HTML Block using collapsible sections and enabling advanced styles and features. This module an extension of the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is a sampler of features and styles suitable for a family history or biography.
+An HTML Block using collapsible sections and enabling advanced styles and features. This module is an extension of the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is a sampler of some features and styles suitable for a family history or biography.
 
 
 Compatibility: webtrees 2.1.x <br>
 Requires webtrees 2.1.20 for extended allowed classes and styles.   
 
 ## Rationale
-This module was designed to better display longform content such as an extensive family history narrative that would otherwise produce one very long page.
+This module was designed to better display longform content such as an extensive family history narrative or biography that would otherwise produce one very long page.
 
 ## Installation
 
 Install and enable the module:
 * Download and unzip the release package.
-* Place the *webtrees-HTML-block-advanced* folder inside *modules_v4* folder of your webtrees installation.
+* Place the ***webtrees-HTML-block-advanced*** folder inside ***modules_v4*** folder of your webtrees installation.
 * Open the control panel, Modules | Home page | Blocks, make sure "enabled" is checked next to the html-block-advanced module, click "Save"
 
 Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)
@@ -28,7 +28,7 @@ To upgrade an existing installation of the module, simply replace the html-block
 
 ## Loading starter content
 
-Choose **Compact Sampler** from the Template dropdown. This will load the content of a demonstration template that can be edited and altered to suit your needs. This sampler template has collapsable sections and placeholder images and text. Add a **Title** and **Save**.<br>
+Choose **Compact Sampler** from the Template dropdown. This will load the content of a demonstration template that can be edited, added to, and altered to suit your needs. This sampler template has collapsable sections and placeholder images and text. Add a **Title** and **Save**.<br>
 
 ***Caution!*** *this will overwrite any previously saved content.* See [Backup Section](#backup) below
 
@@ -45,15 +45,12 @@ View the result in the HTML Advanced Block you have added to your **My Page** or
 
 <img src="docs/screenshot3.jpg" width="50%" >
 
-### Work on a full User Manual is ongoing
-[User Manual wiki](https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki)
-
 
 ### Editing content and adding sections
 
 
-* You can use the WYSIWYG editor to add or remove content.
-* If you are comfortable with html code, use the [source] tab to edit and extend content.
+* You can use the WYSIWYG editor to add or remove content but this is not ideal for more complex content.
+* Editing and customizing content is best done using the [Source] tab to access the underlying HTML code.
 * To add new sections, use this example code.
 
  <span style="color:#c05050;font-size:1.2em"> **Important!** <br>**It is essential that the anchor href \# and div id use the same UNIQUE identifier - unique from all other sections.<br> 
@@ -76,3 +73,8 @@ add new sections after the closing divs of a previous section
 It is good practice to make a backup copy of your edited content. It is easily possible to unintentionally overwrite your custom content by again selecting template from the dropdown. As long as you don't **Save**, selecting **Cancel** at this point will leave your content in place. The WYSIWYG editor also is rather unforgiving of custom code errors so while editing, regular backups are always a good idea.
 
 To backup your content, select the [Source] tab in the editor and copy the source HTML code. This can be kept as a plain text file and pasted back into the editor source to restore.  
+
+
+### Work on a full User Manual is ongoing
+[User Manual wiki](https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki)
+
