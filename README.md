@@ -9,7 +9,7 @@ An HTML Block using collapsible sections and enabling advanced styles and featur
 
 
 Compatibility: webtrees 2.1.x <br>
-Requires webtrees 2.1.20 for extended allowed classes and styles. 
+Requires webtrees 2.1.20 for extended allowed classes and styles.</br> 
 There is a simple temporary patch available for previous versions of webtrees.
 
 ## Rationale
@@ -19,7 +19,7 @@ This module was designed to better display longform content such as an extensive
 
 Install and enable the module:
 * Download and unzip the release package.
-* Place the ***webtrees-HTML-block-advanced*** folder inside ***modules_v4*** folder of your webtrees installation.
+* Place the ***webtrees-HTML-block-advanced*** folder (named without any version suffix) inside ***modules_v4*** folder of your webtrees installation.
 * Open the control panel, Modules | Home page | Blocks, make sure "enabled" is checked next to the html-block-advanced module, click "Save"
 
 Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)
