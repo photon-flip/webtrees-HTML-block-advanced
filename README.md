@@ -9,7 +9,8 @@ An HTML Block using collapsible sections and enabling advanced styles and featur
 
 
 Compatibility: webtrees 2.1.x <br>
-Requires webtrees 2.1.20 for extended allowed classes and styles.   
+Requires webtrees 2.1.20 for extended allowed classes and styles. 
+There is a simple temporary patch available for previous versions of webtrees.
 
 ## Rationale
 This module was designed to better display longform content such as an extensive family history narrative or biography that would otherwise produce one very long page.
