@@ -28,10 +28,10 @@ use Fisharebest\Webtrees\Tree;
         <div class="col-md-9 collapse offset-md-2" id="collapseSection">
             <div class="card card-body">
                 <p>
-                    <?= I18N::translate('<b>HTML Advanced is based on the webtrees HTML Block. It makes use of extra allowed CSS classes that can now be used in the CKEditor since webtrees 2.1.20.<b>')?>
+                    <?= I18N::translate('<b>HTML Advanced is based on the webtrees HTML Block. It makes use of extra allowed CSS classes that can now be used in the CKEditor since webtrees 2.1.20.<br> It can be used in the same way as the standard HTML Block but more complex advanced content requires some knowledge of HTML and CSS.<br>See the <b><a href="#user-manual">User Manual</a></b> for suggested working methods.<b>')?>
                 </p>
                 <p>
-                    <?= I18N::translate('<b>Getting Started</b><br>Choosing <b>Compact Sampler</b> from the <b>Template</b> dropdown will load a demonstration HTML Block template.<br><span style="color:#c85e00">Warning! - this will overwrite any previously entered or saved content in the editor. See the User Manual for how to back up your content.</span><br> The <b>Sampler</b> template is structured with collapsable sections suitable for longform content such as a <b>Family History</b> or <b>Biography</b>. See the <b>User Manual</b> link below for more detailed "How To" information.') ?>
+                    <?= I18N::translate('<b>Getting Started</b><br>Choosing <b>Compact Sampler</b> from the <b>Template</b> dropdown will load a demonstration HTML Block template.<br><span style="color:#c85e00">Warning! - this will overwrite any previously entered or saved content in the editor. See the <b><a href="#user-manual">User Manual</a></b> for how to back up your content.</span><br> The <b>Sampler</b> template is structured with collapsable sections suitable for longform content such as a <b>Family History</b> or <b>Biography</b>. See the <b><a href="#user-manual">User Manual</a></b> link below for more detailed "How To" information.') ?>
                 </p>
                 <p>
                     <?= I18N::translate('The <b>Vanilla</b> template loads just the basic collapsible sections with Lorem ipsum placeholder text.') ?>
@@ -40,7 +40,7 @@ use Fisharebest\Webtrees\Tree;
                     <?= I18N::translate('Next add a <b>Title</b> and <b>Save</b>. View the result in the <b>HTML Advanced</b> block you have added to your <b>My Page</b> or <b>Tree Home Page</b>.<br>            
                     ') ?>
                 </p>
-                <p><?= I18N::translate('Editing and customizing content is best done using the <b>Source</b> tab to access the underlying HTML code. It is possible to use the editor toolbar to edit your content but the CKEditor 4 used in webtrees has "limitations" that make this less than ideal. Using the <b>Source</b> you can also add more sections - see the <b>User Manual</b> for important information on that.') ?>
+                <p><?= I18N::translate('Editing and customizing content is best done using the <b>Source</b> tab to access the underlying HTML code. It is possible to use the editor toolbar to edit your content but the CKEditor 4 used in webtrees has "limitations" that make this less than ideal. Using the <b>Source</b> you can also add more sections - see the <b><a href="#user-manual">User Manual</a></b> for important information on that.') ?>
                 </p>
                 
                 <p>
@@ -54,7 +54,7 @@ use Fisharebest\Webtrees\Tree;
                     ') ?>
                 </p>
                 <div class="col-md-6">
-                    <a class="btn btn-primary text-nowrap" role="link" href="https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki" target="_blank">
+                    <a id="user-manual" class="btn btn-primary text-nowrap" role="link" href="https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki" target="_blank">
                         User Manual - github
                     </a>
                 </div>                
