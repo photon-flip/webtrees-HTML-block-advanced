@@ -79,7 +79,7 @@ class HtmlAdvancedModule extends HtmlBlockModule implements ModuleCustomInterfac
      */
     public function headContent(): string
     {
-        return '<link rel="stylesheet" href="' . e($this->assetUrl('css/compact.css')) . '">';       
+        return '<link rel="stylesheet" href="' . e($this->assetUrl('css/advanced.css')) . '">';       
         
     }
      
