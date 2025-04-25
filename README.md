@@ -20,7 +20,7 @@ This module was designed to better display longform content such as an extensive
 Install and enable the module:
 * Download and unzip the release package.
 * Place the ***webtrees-HTML-block-advanced*** folder (named without any version suffix) inside ***modules_v4*** folder of your webtrees installation.
-* Placeholder images are located in the modules ***resources/images*** folder. This ***images*** folder should be copied or moved to ***webtrees/public*** folder
+* Placeholder images are located in the modules ***resources/images*** folder. This folder of ***images*** should be copied and/or moved to ***webtrees/public*** folder
 * Open the control panel, Modules | Home page | Blocks, make sure "enabled" is checked next to the html-block-advanced module, click "Save"
 
 Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)
