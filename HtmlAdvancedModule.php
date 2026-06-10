@@ -159,7 +159,7 @@ class HtmlAdvancedModule extends HtmlBlockModule implements ModuleCustomInterfac
     
     public function customModuleVersion(): string
     {
-        return '2.2.1';
+        return '2.2.2';
     }
        
     /**
