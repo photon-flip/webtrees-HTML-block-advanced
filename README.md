@@ -8,8 +8,7 @@
 An HTML Block using collapsible sections and enabling advanced styles and features. This module is an extension of the default webtrees HTML Block. It's templates are structured in multiple collapsible sections. The Starter template is a sampler of some features and styles suitable for a family history or biography.
 
 
-Compatibility: webtrees 2.2.x <br>
-There is a simple patch available for use with previous versions of webtrees.
+Compatibility: webtrees 2.2.x. The module keeps its template picker separate from the rich-text editor, preparing a controlled transition to webtrees 2.3. Final webtrees 2.3 support will be confirmed when its editor API is publicly available.
 
 ## Rationale
 This module was designed to better display longform content such as an extensive family history narrative or biography that would otherwise produce one very long page.
@@ -19,13 +18,25 @@ This module was designed to better display longform content such as an extensive
 Install and enable the module:
 * Download and unzip the release package.
 * Place the ***webtrees-HTML-block-advanced*** folder (named without any version suffix) inside ***modules_v4*** folder of your webtrees installation.
-* Placeholder images are located in the modules ***resources/images*** folder. This folder of ***images*** should be copied and/or moved to ***webtrees/public*** folder
+* The bundled starter templates use placeholder images served directly by the module. No files need to be copied to the webtrees `public` folder.
 * Open the control panel, Modules | Home page | Blocks, make sure "enabled" is checked next to the html-block-advanced module, click "Save"
 
 Note: Here you can also change the access level (recommended: Show to visitors) and order (recommended as the first tab to display)
 
 ## Upgrading
 To upgrade an existing installation of the module, simply replace the html-block-advanced folder inside the modules_v4 folder with the new one.
+
+## Images
+
+The bundled starter templates use images served directly by the module. You do not need to copy image files into the webtrees `public` folder.
+
+For your own block images, create a dedicated subfolder below the webtrees `public` folder, for example `public/html-block-images/`, and store your files there. Refer to them with their public URL, for example `/html-block-images/family-house.jpg`. Files in that folder are served as normal public web files and are not blocked by the webtrees media firewall. Do not place such images in a private media folder if they must be visible to visitors.
+
+When you customize a starter template, replace the example image URLs with URLs for your own images.
+
+## Translation
+
+The module uses the standard webtrees PO/MO translation system. The English source strings are in `resources/lang/default.pot`; German is included in `resources/lang/de.po` and `resources/lang/de.mo`. To add another language, copy the template to a language-specific PO file, translate it, and compile it to an MO file. Both IETF language tags such as `en-GB` and underscore filenames such as `en_GB` are recognized.
 
 ## Loading starter content
 

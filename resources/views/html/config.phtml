@@ -9,6 +9,7 @@ use Fisharebest\Webtrees\Tree;
 
 /**
  * @var string               $html
+ * @var string               $editor_script_url
  * @var array<int,string>    $languages
  * @var bool                 $show_timestamp
  * @var array<string,string> $templates
@@ -19,37 +20,28 @@ use Fisharebest\Webtrees\Tree;
 <div class="container p-2">
     <div class="row">
         <div class="col-md-6 offset-md-2">
-            <a class="btn btn-primary text-nowrap" data-bs-toggle="collapse" href="#collapseSection" role="button" aria-expanded="false" aria-controls="collapseExample">Getting Started - User Manual
+            <a class="btn btn-primary text-nowrap" data-bs-toggle="collapse" href="#collapseSection" role="button" aria-expanded="false" aria-controls="collapseExample"><?= I18N::translate('Getting Started - User Manual') ?>
             </a>
             <a class="btn btn-primary text-nowrap" role="link" href="https://github.com/photon-flip/Templates-webtrees-HTML-Advanced" target="_blank">
-                More Templates - github
+                <?= I18N::translate('More Templates - github') ?>
             </a>
         </div>
         <div class="col-md-9 collapse offset-md-2" id="collapseSection">
             <div class="card card-body">
-                <?= I18N::translate('<b>HTML Advanced is based on the webtrees HTML Block. It makes use of extra allowed CSS classes that can now be used in the CKEditor since webtrees 2.1.20.<br> It can be used as a simple standard HTML Block but more complex advanced content requires a basic knowledge of HTML and CSS.<br>See the <b><a href="#user-manual">User Manual</a></b> for suggested working methods.<b>')?>
+                <p><?= I18N::translate('HTML Advanced extends the webtrees HTML block with collapsible sections and additional styles. It can be used as a standard HTML block, while more advanced content benefits from basic HTML and CSS knowledge.') ?></p>
                 <p>
-                    <?= I18N::translate('<b>Getting Started</b><br>Choosing <b>Compact Sampler</b> from the <b>Template</b> dropdown will load a demonstration HTML Block template.<br><span style="color:#c85e00">Warning! - this will overwrite any previously entered or saved content in the editor. See the <b><a href="#user-manual">User Manual</a></b> for how to back up your content.</span><br> The <b>Sampler</b> template is structured with collapsable sections suitable for longform content such as a <b>Family History</b> or <b>Biography</b>. See the <b><a href="#user-manual">User Manual</a></b> link below for more detailed "How To" information.') ?>
+                    <?= I18N::translate('Choose “Compact Sampler” from the template list to load a demonstration block. This replaces the current editor content, so make a copy of your work first.') ?>
                 </p>
                 <p>
-                    <?= I18N::translate('The <b>Vanilla</b> template loads just the basic collapsible sections with Lorem ipsum placeholder text.') ?>
+                    <?= I18N::translate('“Compact Vanilla” contains only basic collapsible sections with placeholder text for a clean start.') ?>
                 </p>
                 <p>
-                    <?= I18N::translate('Next add a <b>Title</b> and <b>Save</b>. View the result in the <b>HTML Advanced</b> block you have added to your <b>My Page</b> or <b>Tree Home Page</b>.<br>            
-                    ') ?>
+                    <?= I18N::translate('Add a title and save the block. You can then view it on your My page or tree home page.') ?>
                 </p>
-                <p><?= I18N::translate('Editing and customizing content is best done using the <b>Source</b> tab to access the underlying HTML code. It is possible to use the editor toolbar to edit your content but the CKEditor 4 used in webtrees has "limitations" that make this less than ideal. Using the <b>Source</b> you can also add more sections - see the <b><a href="#user-manual">User Manual</a></b> for important information on that.') ?>
+                <p><?= I18N::translate('Use the editor source view to customize HTML and add further sections. See the user manual for the required unique section identifiers.') ?>
                 </p>
-                
                 <p>
-                    <?= I18N::translate('<b>Images - Troubleshooting.</b><br>
-                    Configuring images to display correctly in content can be challenging.<br> 
-                    
-                    <p style="margin-left:20px">
-                    <b>Missing images.</b><br>
-                    The most common reason for missing images is an incorrect &lt;img&gt; src="" path.<br>The Sampler template uses <b>relative</b> path urls to placeholder images located in the module "resources" directory. This is intended to be a temporary starter arrangement. The path to the images is set up for a Tree Page block. If the Block is on a User Page the path needs to be prepended with an extra ../<br> example src="../../modules_v4/....."</p>
-                    <p>See the <b>User Manual</b> for more information on linking images and other webtrees content.</p> 
-                    ') ?>
+                    <?= I18N::translate('The sample images are served by the module. Replace their URLs with your own image URLs when you customize the template.') ?>
                 </p>
                 <div class="col-md-6">
                     <a id="user-manual" class="btn btn-primary text-nowrap" role="link" href="https://github.com/photon-flip/webtrees-HTML-block-advanced/wiki" target="_blank">
@@ -113,11 +105,10 @@ use Fisharebest\Webtrees\Tree;
 
 
 <?php View::push('javascript') ?>
+<script src="<?= e($editor_script_url) ?>"></script>
 <script>
-    $("#template").change(function() {
-        this.form.html.value = this.options[this.selectedIndex].value;
-        CKEDITOR.instances.html.setData(document.getElementById("html").value);
+    document.getElementById('template').addEventListener('change', function () {
+        window.HtmlAdvancedEditor.setContent(this.form, this.value);
     });
-
 </script>
 <?php View::endpush() ?>
