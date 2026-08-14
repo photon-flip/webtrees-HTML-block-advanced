@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: webtrees-HTML-block-advanced 2.2.2\n"
+"Report-Msgid-Bugs-To: https://github.com/photon-flip/webtrees-HTML-block-advanced/issues\n"
+"POT-Creation-Date: 2026-08-14 19:25+0200\n"
+"PO-Revision-Date: 2026-08-14 19:30+0200\n"
+"Last-Translator: Hartenthaler\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "HTML Advanced"
+msgstr "HTML Advanced"
+
+msgid "An advanced HTML Block"
+msgstr "Ein erweiterter HTML-Block"
+
+msgid "Choose a Template from the dropdown - Warning! Overwrites custom content."
+msgstr "Wählen Sie eine Vorlage aus der Auswahlliste – Achtung: Eigene Inhalte werden überschrieben."
+
+msgid "Compact Sampler"
+msgstr "Kompakte Beispielvorlage"
+
+msgid "Compact Vanilla"
+msgstr "Kompakte Grundvorlage"
+
+msgid "HTML Advanced extends the webtrees HTML block with collapsible sections and additional styles. It can be used as a standard HTML block, while more advanced content benefits from basic HTML and CSS knowledge."
+msgstr "HTML Advanced erweitert den HTML-Block von webtrees um aufklappbare Abschnitte und zusätzliche Stile. Er kann als normaler HTML-Block verwendet werden; für weitergehende Inhalte sind grundlegende HTML- und CSS-Kenntnisse hilfreich."
+
+msgid "Choose “Compact Sampler” from the template list to load a demonstration block. This replaces the current editor content, so make a copy of your work first."
+msgstr "Wählen Sie „Kompakte Beispielvorlage“ aus der Vorlagenliste, um einen Beispielblock zu laden. Dadurch wird der aktuelle Inhalt im Editor ersetzt; erstellen Sie daher zuvor eine Kopie Ihrer Arbeit."
+
+msgid "“Compact Vanilla” contains only basic collapsible sections with placeholder text for a clean start."
+msgstr "„Kompakte Grundvorlage“ enthält nur einfache aufklappbare Abschnitte mit Platzhaltertext für einen sauberen Start."
+
+msgid "Add a title and save the block. You can then view it on your My page or tree home page."
+msgstr "Geben Sie einen Titel ein und speichern Sie den Block. Anschließend können Sie ihn auf Ihrer Meine-Seite oder der Startseite des Stammbaums ansehen."
+
+msgid "Use the editor source view to customize HTML and add further sections. See the user manual for the required unique section identifiers."
+msgstr "Verwenden Sie die Quelltextansicht des Editors, um HTML anzupassen und weitere Abschnitte hinzuzufügen. Im Benutzerhandbuch finden Sie Hinweise zu den erforderlichen eindeutigen Abschnittskennungen."
+
+msgid "The sample images are served by the module. Replace their URLs with your own image URLs when you customize the template."
+msgstr "Die Beispielbilder werden vom Modul bereitgestellt. Ersetzen Sie deren URLs durch die URLs eigener Bilder, wenn Sie die Vorlage anpassen."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Templates"
+msgstr "Vorlagen"
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid "Show the date and time of update"
+msgstr "Datum und Uhrzeit der Aktualisierung anzeigen"
+
+msgid "no"
+msgstr "nein"
+
+msgid "yes"
+msgstr "ja"
+
+msgid "Show this block for which languages"
+msgstr "Diesen Block für welche Sprachen anzeigen"

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the webtrees-HTML-block-advanced package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: webtrees-HTML-block-advanced 2.2.2\n"
+"Report-Msgid-Bugs-To: https://github.com/photon-flip/webtrees-HTML-block-advanced/issues\n"
+"POT-Creation-Date: 2026-08-14 19:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: HtmlAdvancedModule.php:100
+msgid "HTML Advanced"
+msgstr ""
+
+#: HtmlAdvancedModule.php:110
+msgid "An advanced HTML Block"
+msgstr ""
+
+#: HtmlAdvancedModule.php:209
+msgid ""
+"Choose a Template from the dropdown - Warning! Overwrites custom content."
+msgstr ""
+
+#: HtmlAdvancedModule.php:210
+msgid "Compact Sampler"
+msgstr ""
+
+#: HtmlAdvancedModule.php:211
+msgid "Compact Vanilla"
+msgstr ""
+
+#: resources\views\html\config.phtml:31
+msgid ""
+"HTML Advanced extends the webtrees HTML block with collapsible sections and "
+"additional styles. It can be used as a standard HTML block, while more "
+"advanced content benefits from basic HTML and CSS knowledge."
+msgstr ""
+
+#: resources\views\html\config.phtml:33
+msgid ""
+"Choose “Compact Sampler” from the template list to load a demonstration "
+"block. This replaces the current editor content, so make a copy of your work "
+"first."
+msgstr ""
+
+#: resources\views\html\config.phtml:36
+msgid ""
+"“Compact Vanilla” contains only basic collapsible sections with placeholder "
+"text for a clean start."
+msgstr ""
+
+#: resources\views\html\config.phtml:39
+msgid ""
+"Add a title and save the block. You can then view it on your My page or tree "
+"home page."
+msgstr ""
+
+#: resources\views\html\config.phtml:41
+msgid ""
+"Use the editor source view to customize HTML and add further sections. See "
+"the user manual for the required unique section identifiers."
+msgstr ""
+
+#: resources\views\html\config.phtml:44
+msgid ""
+"The sample images are served by the module. Replace their URLs with your own "
+"image URLs when you customize the template."
+msgstr ""
+
+#: resources\views\html\config.phtml:58
+msgid "Title"
+msgstr ""
+
+#: resources\views\html\config.phtml:67
+msgid "Templates"
+msgstr ""
+
+#: resources\views\html\config.phtml:77
+msgid "Content"
+msgstr ""
+
+#: resources\views\html\config.phtml:88
+msgid "Show the date and time of update"
+msgstr ""
+
+#: resources\views\html\config.phtml:91
+msgid "no"
+msgstr ""
+
+#: resources\views\html\config.phtml:91
+msgid "yes"
+msgstr ""
+
+#: resources\views\html\config.phtml:97
+msgid "Show this block for which languages"
+msgstr ""
