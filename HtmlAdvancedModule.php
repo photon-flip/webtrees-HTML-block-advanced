@@ -23,6 +23,7 @@ use Fisharebest\Webtrees\View;
 
 use function explode;
 use function fclose;
+use function filesize;
 use function fopen;
 use function is_file;
 use function str_replace;
@@ -235,29 +236,34 @@ class HtmlAdvancedModule extends HtmlBlockModule implements ModuleCustomInterfac
         foreach ($languageFiles as $languageFile) {
             foreach (['.mo', '.po'] as $extension) {
                 $file = $this->resourcesFolder() . 'lang/' . $languageFile . $extension;
-                if (!is_file($file)) {
+                $minimumSize = $extension === '.mo' ? 28 : 8;
+                if (!is_file($file) || filesize($file) < $minimumSize) {
                     continue;
                 }
 
-                if (class_exists(\Fisharebest\Webtrees\I18N\Translation::class)) {
-                    $stream = fopen($file, 'rb');
-                    if ($stream === false) {
-                        continue;
+                try {
+                    if (class_exists(\Fisharebest\Webtrees\I18N\Translation::class)) {
+                        $stream = fopen($file, 'rb');
+                        if ($stream === false) {
+                            continue;
+                        }
+
+                        try {
+                            $translation = $extension === '.mo'
+                                ? \Fisharebest\Webtrees\I18N\Translation::fromMoStream($stream)
+                                : \Fisharebest\Webtrees\I18N\Translation::fromPoStream($stream);
+
+                            return $translation->toArray();
+                        } finally {
+                            fclose($stream);
+                        }
                     }
 
-                    try {
-                        $translation = $extension === '.mo'
-                            ? \Fisharebest\Webtrees\I18N\Translation::fromMoStream($stream)
-                            : \Fisharebest\Webtrees\I18N\Translation::fromPoStream($stream);
-
-                        return $translation->toArray();
-                    } finally {
-                        fclose($stream);
+                    if (class_exists(\Fisharebest\Localization\Translation::class)) {
+                        return (new \Fisharebest\Localization\Translation($file))->asArray();
                     }
-                }
-
-                if (class_exists(\Fisharebest\Localization\Translation::class)) {
-                    return (new \Fisharebest\Localization\Translation($file))->asArray();
+                } catch (\Throwable) {
+                    // Ignore a malformed optional catalog and use the next available language file.
                 }
             }
         }
