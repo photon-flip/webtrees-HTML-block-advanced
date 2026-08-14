@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: webtrees-HTML-block-advanced 2.2.2\n"
+"Project-Id-Version: webtrees-HTML-block-advanced 2.2.6.0\n"
 "Report-Msgid-Bugs-To: https://github.com/photon-flip/webtrees-HTML-block-advanced/issues\n"
 "POT-Creation-Date: 2026-08-14 19:25+0200\n"
 "PO-Revision-Date: 2026-08-14 19:30+0200\n"
@@ -37,7 +37,13 @@ msgid "“Compact Vanilla” contains only basic collapsible sections with place
 msgstr "„Kompakte Grundvorlage“ enthält nur einfache aufklappbare Abschnitte mit Platzhaltertext für einen sauberen Start."
 
 msgid "Add a title and save the block. You can then view it on your My page or tree home page."
-msgstr "Geben Sie einen Titel ein und speichern Sie den Block. Anschließend können Sie ihn auf Ihrer Meine-Seite oder der Startseite des Stammbaums ansehen."
+msgstr "Geben Sie einen Titel ein und speichern Sie den Block. Anschließend können Sie ihn auf Ihrer Meine-Seite oder der Startseite eines Stammbaums ansehen."
+
+msgid "Getting Started - User Manual"
+msgstr "Erste Schritte – Benutzerhandbuch"
+
+msgid "More Templates - github"
+msgstr "Weitere Vorlagen – GitHub"
 
 msgid "Use the editor source view to customize HTML and add further sections. See the user manual for the required unique section identifiers."
 msgstr "Verwenden Sie die Quelltextansicht des Editors, um HTML anzupassen und weitere Abschnitte hinzuzufügen. Im Benutzerhandbuch finden Sie Hinweise zu den erforderlichen eindeutigen Abschnittskennungen."

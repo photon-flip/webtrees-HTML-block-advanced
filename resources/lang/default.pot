@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: webtrees-HTML-block-advanced 2.2.2\n"
+"Project-Id-Version: webtrees-HTML-block-advanced 2.2.6.0\n"
 "Report-Msgid-Bugs-To: https://github.com/photon-flip/webtrees-HTML-block-advanced/issues\n"
 "POT-Creation-Date: 2026-08-14 19:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -39,38 +39,46 @@ msgid "Compact Vanilla"
 msgstr ""
 
 #: resources\views\html\config.phtml:31
+msgid "Getting Started - User Manual"
+msgstr ""
+
+#: resources\views\html\config.phtml:34
+msgid "More Templates - github"
+msgstr ""
+
+#: resources\views\html\config.phtml:37
 msgid ""
 "HTML Advanced extends the webtrees HTML block with collapsible sections and "
 "additional styles. It can be used as a standard HTML block, while more "
 "advanced content benefits from basic HTML and CSS knowledge."
 msgstr ""
 
-#: resources\views\html\config.phtml:33
+#: resources\views\html\config.phtml:39
 msgid ""
 "Choose “Compact Sampler” from the template list to load a demonstration "
 "block. This replaces the current editor content, so make a copy of your work "
 "first."
 msgstr ""
 
-#: resources\views\html\config.phtml:36
+#: resources\views\html\config.phtml:42
 msgid ""
 "“Compact Vanilla” contains only basic collapsible sections with placeholder "
 "text for a clean start."
 msgstr ""
 
-#: resources\views\html\config.phtml:39
+#: resources\views\html\config.phtml:45
 msgid ""
 "Add a title and save the block. You can then view it on your My page or tree "
 "home page."
 msgstr ""
 
-#: resources\views\html\config.phtml:41
+#: resources\views\html\config.phtml:47
 msgid ""
 "Use the editor source view to customize HTML and add further sections. See "
 "the user manual for the required unique section identifiers."
 msgstr ""
 
-#: resources\views\html\config.phtml:44
+#: resources\views\html\config.phtml:50
 msgid ""
 "The sample images are served by the module. Replace their URLs with your own "
 "image URLs when you customize the template."

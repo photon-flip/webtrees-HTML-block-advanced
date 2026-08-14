@@ -26,9 +26,13 @@ Note: Here you can also change the access level (recommended: Show to visitors) 
 ## Upgrading
 To upgrade an existing installation of the module, simply replace the html-block-advanced folder inside the modules_v4 folder with the new one.
 
-## Images in starter templates
+## Images
 
-The bundled starter templates use images served directly by the module. You do not need to copy image files into the webtrees `public` folder. When you customize a template, replace the example image URLs with URLs for your own images.
+The bundled starter templates use images served directly by the module. You do not need to copy image files into the webtrees `public` folder.
+
+For your own block images, create a dedicated subfolder below the webtrees `public` folder, for example `public/html-block-images/`, and store your files there. Refer to them with their public URL, for example `/html-block-images/family-house.jpg`. Files in that folder are served as normal public web files and are not blocked by the webtrees media firewall. Do not place such images in a private media folder if they must be visible to visitors.
+
+When you customize a starter template, replace the example image URLs with URLs for your own images.
 
 ## Translation
 
